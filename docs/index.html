@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Москва CRMP — Форум</title>
+<style>
+:root {
+  --bg:#0f1220;--bg2:#151a2e;--panel:#1b2138;--panel2:#222a45;--border:#2d3654;
+  --text:#dbe2f3;--muted:#8891ab;--accent:#e5484d;--accent2:#c73a3f;
+  --purple:#a970ff;--radius:10px;
+}
+*{box-sizing:border-box}
+body{
+  background:radial-gradient(1200px 500px at 20% -10%,rgba(229,72,77,.12),transparent 60%),radial-gradient(1000px 500px at 90% 0%,rgba(169,112,255,.10),transparent 55%),var(--bg);
+  color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.5;margin:0;min-height:100vh;
+}
+a{color:var(--accent);text-decoration:none}
+.container{width:100%;max-width:1060px;margin:0 auto;padding:0 16px}
+.site-header{background:rgba(13,16,30,.9);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
+.header-inner{display:flex;align-items:center;gap:20px;padding:12px 16px;flex-wrap:wrap}
+.logo{font-size:20px;font-weight:800;color:#fff;letter-spacing:.5px;background:linear-gradient(90deg,var(--accent),var(--purple));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.main-nav{display:flex;gap:6px;flex-wrap:wrap}
+.main-nav a{color:var(--muted);padding:6px 12px;border-radius:8px;font-weight:600;font-size:14px}
+.main-nav a:hover{color:#fff;background:var(--panel2)}
+.userbox{margin-left:auto;display:flex;align-items:center;gap:10px}
+.btn{display:inline-block;padding:8px 16px;border-radius:8px;background:var(--panel2);color:var(--text);border:1px solid var(--border);cursor:pointer;font-weight:600;font-size:14px}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-sm{padding:5px 10px;font-size:13px}
+.btn-primary:hover,.btn:hover{opacity:.9}
+.demo-banner{background:rgba(169,112,255,.12);border:1px solid rgba(169,112,255,.3);border-radius:var(--radius);padding:12px 16px;margin:16px 0;color:#d8c6ff;text-align:center}
+.category-block{margin-bottom:22px}
+.cat-header{padding:8px 4px}
+.cat-title{margin:0;font-size:18px;font-weight:800}
+.cat-title a{color:#fff}
+.cat-title a:hover{color:var(--accent)}
+.cat-desc{color:var(--muted);font-size:13px}
+.cat-rows{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:4px 16px}
+.row-labels,.row-stats{display:grid;grid-template-columns:90px 90px 1fr;gap:10px;align-items:center}
+.row-labels{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px;padding:8px 0;border-bottom:1px solid var(--border)}
+.row-stats{padding:12px 0}
+.last-topic{font-weight:600;color:var(--text)}
+.last-topic:hover{color:var(--accent)}
+.last-meta{font-size:13px;color:var(--muted)}
+.time{color:var(--muted);font-size:12px}
+.muted{color:var(--muted)}
+.topic-list{width:100%;border-collapse:collapse;background:var(--panel);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);margin-top:18px}
+.topic-list th{text-align:left;padding:10px 14px;background:var(--panel2);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+.topic-list td{padding:12px 14px;border-top:1px solid var(--border);vertical-align:top}
+.topic-title{font-weight:700;color:var(--text);font-size:15px}
+.topic-title:hover{color:var(--accent)}
+.site-footer{border-top:1px solid var(--border);padding:18px 0;color:var(--muted);font-size:13px;background:rgba(13,16,30,.6);margin-top:30px}
+@media(max-width:720px){.row-labels,.row-stats{grid-template-columns:60px 60px 1fr}.header-inner{gap:10px}.userbox{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#">Москва CRMP</a>
+    <nav class="main-nav">
+      <a href="#">Форум</a>
+      <a href="#">Поиск</a>
+      <a href="#">ЛС</a>
+    </nav>
+    <div class="userbox">
+      <a class="btn btn-sm" href="#">Вход</a>
+      <a class="btn btn-sm btn-primary" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <div class="demo-banner">
+    ⚠ Демо-версия форума «Москва CRMP». Полноценный форум (вход, посты, админка) работает на PHP-хостинге, т.к. GitHub Pages не поддерживает PHP.
+  </div>
+
+  <div class="category-block">
+    <div class="cat-header">
+      <h2 class="cat-title"><a href="#">Объявления администрации</a></h2>
+      <span class="cat-desc">Официальные новости и правила сервера</span>
+    </div>
+    <div class="cat-rows">
+      <div class="row-labels"><div>Темы</div><div>Ответы</div><div>Последнее</div></div>
+      <div class="row-stats">
+        <div>3</div><div>47</div>
+        <div><a class="last-topic" href="#">Правила сервера и форума</a>
+          <div class="last-meta">от Admin <span class="time">09.11.2026 14:20</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-block">
+    <div class="cat-header">
+      <h2 class="cat-title"><a href="#">Обсуждения</a></h2>
+      <span class="cat-desc">Общие разговоры о сервере и жизни города</span>
+    </div>
+    <div class="cat-rows">
+      <div class="row-labels"><div>Темы</div><div>Ответы</div><div>Последнее</div></div>
+      <div class="row-stats">
+        <div>12</div><div>203</div>
+        <div><a class="last-topic" href="#">📌 Встречаем новых жителей!</a>
+          <div class="last-meta">от Player123 <span class="time">10.11.2026 09:41</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-block">
+    <div class="cat-header">
+      <h2 class="cat-title"><a href="#">Помощь и поддержка</a></h2>
+      <span class="cat-desc">Вопросы новичков, проблемы с подключением</span>
+    </div>
+    <div class="cat-rows">
+      <div class="row-labels"><div>Темы</div><div>Ответы</div><div>Последнее</div></div>
+      <div class="row-stats">
+        <div>8</div><div>56</div>
+        <div><a class="last-topic" href="#">Как устроиться на работу?</a>
+          <div class="last-meta">от Newbie <span class="time">08.11.2026 18:03</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-block">
+    <div class="cat-header">
+      <h2 class="cat-title"><a href="#">Купить привилегии</a></h2>
+      <span class="cat-desc">Информация о донате и его статусах</span>
+    </div>
+    <div class="cat-rows">
+      <div class="row-labels"><div>Темы</div><div>Ответы</div><div>Последнее</div></div>
+      <div class="row-stats">
+        <div>2</div><div>19</div>
+        <div><a class="last-topic" href="#">Список привилегий и цены</a>
+          <div class="last-meta">от Admin <span class="time">01.11.2026 12:30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="muted" style="margin:24px 0 8px">Активные темы</h3>
+  <table class="topic-list">
+    <thead><tr><th>Тема</th><th>Автор</th><th>Ответы</th><th>Последнее</th></tr></thead>
+    <tbody>
+      <tr><td><a class="topic-title" href="#">📌 Правила сервера и форума</a></td><td>Admin</td><td>21</td><td class="muted">09.11.2026</td></tr>
+      <tr><td><a class="topic-title" href="#">Встречаем новых жителей — расскажите о себе!</a></td><td>Moder</td><td>34</td><td class="muted">10.11.2026</td></tr>
+      <tr><td><a class="topic-title" href="#">Гайд для новичков по работам на сервере</a></td><td>Helper</td><td>12</td><td class="muted">07.11.2026</td></tr>
+      <tr><td><a class="topic-title" href="#">🔒 Опрос: какое время суток играете чаще?</a></td><td>Player</td><td>88</td><td class="muted">05.11.2026</td></tr>
+    </tbody>
+  </table>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 Москва CRMP. Форум связан с игровым сервером.</div>
+</footer>
+</body>
+</html>

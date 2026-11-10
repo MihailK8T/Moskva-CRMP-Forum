@@ -1,0 +1,8 @@
+# Секреты и локальные настройки
+inc/config.php
+
+# Файлы компоновщика / IDE
+/composer.lock
+*.log
+.idea/
+.vscode/
